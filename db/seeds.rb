@@ -8,34 +8,21 @@
 #---
 # encoding: utf-8
 Product.delete_all
-Product.create!(title: 'First Postcard',
+Product.create!(title: 'Hawaii',
   description:
-    %{<p>
-        Postcard from Hawaii.
-      </p>},
+    %{<p> Postcard from Hawaii </p>},
   image_url:   'hawaii.jpg',
   price: 1.55)
 # . . .
-Product.create!(title: 'Programming Ruby 1.9 & 2.0',
+Product.create!(title: 'New York',
   description:
-    %{<p>
-        Ruby is the fastest growing and most exciting dynamic language
-        out there. If you need to get working programs delivered fast,
-        you should add Ruby to your toolbox.
-      </p>},
-  image_url: 'ruby.jpg',
-  price: 49.95)
+    %{<p> Postcard from New York </p>},
+  image_url: 'ny.jpg',
+  price: 1.55)
 # . . .
 
-Product.create!(title: 'Rails Test Prescriptions',
+Product.create!(title: 'Sri Lanka',
   description:
-    %{<p>
-        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing
-        Rails applications, covering Test-Driven Development from both a
-        theoretical perspective (why to test) and from a practical perspective
-        (how to test effectively). It covers the core Rails testing tools and
-        procedures for Rails 2 and Rails 3, and introduces popular add-ons,
-        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.
-      </p>},
-  image_url: 'rtp.jpg',
-  price: 34.95)
+    %{<p> Postcard from Sri Lanka </p>},
+  image_url: 'lanka.jpg',
+  price: 1.55)
