@@ -1,3 +1,3 @@
 ```bash
-Online shop
+Online store
 ```
