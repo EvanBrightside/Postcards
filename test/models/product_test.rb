@@ -13,9 +13,11 @@ class ProductTest < ActiveSupport::TestCase
   end
 
   test "product price must be positive" do
-    product = Product.new(title: "Thailand",
-                          description: "beautiful",
-                          image_url: "thai.jpg")
+    product = Product.new(
+      title: "Thailand",
+      description: "beautiful",
+      image_url: "thai.jpg"
+    )
 
     product.price = -1
     assert product.invalid?
@@ -41,7 +43,6 @@ class ProductTest < ActiveSupport::TestCase
   end
 
   test "image url" do
-
     ok = %w{ pic.jpg pic.gif pic.png PIC.JPG PIC.Jpg http://a.b.c/x/y/z/pic.gif }
     bad = %w{ pic.doc pic.gif/more pic.gif.more }
 
