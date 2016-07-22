@@ -6,4 +6,8 @@ class Product < ActiveRecord::Base
     with: %r{\.(gif|jpg|png)\Z}i,
     message: 'The image must be JPG, PNG or GIF format'
   }
+
+  def self.latest
+    Product.order(:updated_at).last
+  end
 end
