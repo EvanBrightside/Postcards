@@ -21,8 +21,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'pg', '0.15.1'
-
 group :development, :test do
   gem 'byebug'
 end
@@ -33,5 +31,6 @@ group :development do
 end
 
 group :production do
+  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
