@@ -1,3 +1,4 @@
 ```bash
-Online store - https://worldcards.herokuapp.com/
+Online store || try it here:
 ```
+https://worldcards.herokuapp.com/
