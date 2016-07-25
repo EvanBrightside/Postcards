@@ -1,0 +1,8 @@
+<h3>Order from the Postcards Store shipped</h3>
+<p>
+This message notifies You that we have shipped your recent order:
+</p>
+<table>
+the <tr><th colspan="2">Qty</th><th>Description</th></tr>
+<%= render @order.line_items -%>
+</table>
