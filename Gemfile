@@ -21,6 +21,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'activemerchant', '~> 1.31'
+
+gem 'haml'
+
+gem 'kaminari', '~> 0.14'
+
 group :development, :test do
   gem 'byebug'
 end
